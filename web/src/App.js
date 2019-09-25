@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import AnimatedNumber from 'react-animated-number';
 import './App.css';
 
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code>  Hej Emil reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className="App-header">
+                <div>Energy Comsumption 60 Computers</div>
+                <p>
+                    <AnimatedNumber component="text" value={432000}
+                                    style={{
+                                        transition: '0.8s ease-out',
+                                        fontSize: 150,
+                                        transitionProperty:
+                                            'background-color, color, opacity'
+                                    }}
+                                    duration={180000}
+                                    stepPrecision={0}
+                                    initialValue={0}
+                    />Joules
+
+                </p>
+            </header>
+        </div>
+
+    );
 }
 
 export default App;
