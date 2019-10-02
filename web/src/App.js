@@ -46,7 +46,7 @@ class App extends React.Component {
                                         initialValue={this.state.consumption}
                         /> Joules
 
-                        <p>{parseInt(this.state.consumption/125000)} Pieces of paper</p>
+                        {/*<p>{parseInt(this.state.consumption/125000)} Pieces of paper</p>*/}
 
                     </p>
                 </header>
