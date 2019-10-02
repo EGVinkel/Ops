@@ -7,7 +7,7 @@ import './App.css';
 class App extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {value: 200, watt: 40, seconds: 0, consumption: 0}
+        this.state = {value: 0, watt: 40, seconds: 0, consumption: 0}
         this.handleChange = this.handleChange.bind(this);
 
     }
